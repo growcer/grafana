@@ -95,6 +95,15 @@ export function setupAngularRoutes($routeProvider: route.IRouteProvider, $locati
         component: () => SoloPanelPage,
       },
     })
+    .when('/d-solo-growcer/:uid/:slug', {
+      template: '<react-container />',
+      pageClass: 'dashboard-solo dashboard-solo-growcer',
+      routeInfo: DashboardRouteInfo.Normal,
+      reloadOnSearch: false,
+      resolve: {
+        component: () => SoloPanelPage,
+      },
+    })
     .when('/dashboard-solo/:type/:slug', {
       template: '<react-container />',
       pageClass: 'dashboard-solo',
