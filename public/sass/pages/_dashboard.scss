@@ -125,3 +125,13 @@ div.flot-text {
 body.dashboard-solo-growcer {
   background: transparent;
 }
+
+.dashboard-solo-growcer {
+  * {
+    font-family: 'Titillium Web';
+  }
+
+  .graph-legend {
+    display: none;
+  }
+}
