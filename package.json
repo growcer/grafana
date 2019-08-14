@@ -148,11 +148,6 @@
     "packages:publish": "lerna publish from-package --contents dist",
     "packages:publishNext": "lerna publish from-package --contents dist --dist-tag next --yes"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm run precommit"
-    }
-  },
   "lint-staged": {
     "*.{ts,tsx,json,scss}": [
       "prettier --write",
