@@ -141,7 +141,6 @@
     "storybook:build": "cd packages/grafana-ui && yarn storybook:build",
     "prettier:check": "prettier --list-different \"**/*.{ts,tsx,scss}\"",
     "prettier:write": "prettier --list-different \"**/*.{ts,tsx,scss}\" --write",
-    "precommit": "grafana-toolkit precommit",
     "themes:generate": "ts-node --project ./scripts/cli/tsconfig.json ./scripts/cli/generateSassVariableFiles.ts",
     "packages:prepare": "lerna run clean && npm run test && lerna version --tag-version-prefix=\"packages@\" -m \"Packages: publish %s\" --no-push",
     "packages:build": "lerna run clean && lerna run build",
