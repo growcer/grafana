@@ -124,6 +124,7 @@ div.flot-text {
 
 body.dashboard-solo-growcer {
   background: transparent;
+  height: calc(100% - 50px);
 }
 
 .dashboard-solo-growcer {
@@ -133,5 +134,13 @@ body.dashboard-solo-growcer {
 
   .graph-legend {
     display: none;
+  }
+
+  .panel-header {
+    display: none;
+  }
+
+  .panel-content {
+    height: 100%;
   }
 }
