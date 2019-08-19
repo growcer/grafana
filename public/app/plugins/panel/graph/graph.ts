@@ -219,7 +219,7 @@ class GraphElement {
     let contextMenuItems: ContextMenuItem[];
 
 
-    const dashboardElem = this.elem.closest('.dashboard-solo')
+    const dashboardElem = this.elem.closest('.dashboard-solo');
 
     if (dashboardElem.hasClass('dashboard-solo-growcer')) {
       return;
