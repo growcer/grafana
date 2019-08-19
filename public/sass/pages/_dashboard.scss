@@ -128,8 +128,14 @@ body.dashboard-solo-growcer {
 }
 
 .dashboard-solo-growcer {
+  overflow: hidden;
+
   * {
     font-family: 'Titillium Web';
+  }
+
+  .fa {
+    font-family: 'FontAwesome';
   }
 
   .graph-legend {
