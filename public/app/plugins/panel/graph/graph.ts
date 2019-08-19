@@ -218,6 +218,13 @@ class GraphElement {
     const contextMenuSourceItem = item;
     let contextMenuItems: ContextMenuItem[];
 
+
+    const dashboardElem = this.elem.closest('.dashboard-solo')
+
+    if (dashboardElem.hasClass('dashboard-solo-growcer')) {
+      return;
+    }
+
     if (this.panel.xaxis.mode !== 'time') {
       // Skip if panel in histogram or series mode
       return;
